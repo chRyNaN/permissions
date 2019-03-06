@@ -7,7 +7,7 @@ import android.app.Activity
 import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
-import android.support.annotation.RequiresApi
+import androidx.annotation.RequiresApi
 
 fun Context.hasPermission(permission: RuntimePermission): Boolean =
     checkSelfPermission(permission.permissionString) == PackageManager.PERMISSION_GRANTED
